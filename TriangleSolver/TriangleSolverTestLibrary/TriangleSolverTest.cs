@@ -87,147 +87,101 @@ namespace TriangleSolverTestLibrary
             Assert.IsTrue(expected.Equals(actual));
         }
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+        [Test]
+        public void AnalyzeTriangle_Input50_60_70_OutputScaleneTriangle()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
 
-        //    // Act
+            int firstSide = 50;
+            int secondSide = 60;
+            int thirdSide = 70;
 
-        //    // Assert
-        //}
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
-        //    // Act
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        //    // Assert
-        //}
+        [Test]
+        public void AnalyzeTriangle_Input50_70_90_OutputScaleneTriangle()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            int firstSide = 50;
+            int secondSide = 70;
+            int thirdSide = 90;
 
-        //    // Act
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
-        //    // Assert
-        //}
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        //    // Act
+        [Test]
+        public void AnalyzeTriangle_Input40_70_100_OutputScaleneTriangle()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
 
-        //    // Assert
-        //}
+            int firstSide = 40;
+            int secondSide = 70;
+            int thirdSide = 100;
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
-        //    // Act
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
-        //    // Assert
-        //}
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+        [Test]
+        public void AnalyzeTriangle_Input1_2_3_OutputScaleneTriangle()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
 
-        //    // Act
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 4;
 
-        //    // Assert
-        //}
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
-        //    // Act
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        //    // Assert
-        //}
+        [Test]
+        public void AnalyzeTriangle_Input2000_3000_4000_OutputScaleneTriangle()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            int firstSide = 2000;
+            int secondSide = 3000;
+            int thirdSide = 4000;
 
-        //    // Act
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
 
-        //    // Assert
-        //}
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        //    // Act
 
-        //    // Assert
-        //}
-
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
-
-        //    // Act
-
-        //    // Assert
-        //}
-
-        //[Test]
-        //public void AnalyzeTriangle_Input60_60_60_OutputEquilateralTriangle()
-        //{
-        //    // Arrange
-        //    int firstSide = 60;
-        //    int secondSide = 60;
-        //    int thirdSide = 60;
-
-        //    // Act
-
-        //    // Assert
-        //}
     }
 }
