@@ -182,6 +182,63 @@ namespace TriangleSolverTestLibrary
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void AnalyzeTriangle_Input0_3_4_OutputZeroLengthSideIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 0;
+            int secondSide = 3;
+            int thirdSide = 4;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input0_0_4_OutputZeroLengthSideIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 0;
+            int secondSide = 0;
+            int thirdSide = 4;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input0_0_0_OutputZeroLengthSideIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 0;
+            int secondSide = 0;
+            int thirdSide = 0;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
 
     }
 }
