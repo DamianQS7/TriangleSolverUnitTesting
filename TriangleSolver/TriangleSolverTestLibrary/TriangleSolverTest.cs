@@ -239,6 +239,62 @@ namespace TriangleSolverTestLibrary
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void AnalyzeTriangle_Input1_20_30_OutputInvalidTriangleIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 1;
+            int secondSide = 20;
+            int thirdSide = 30;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input1_2_30_OutputInvalidTriangleIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 1;
+            int secondSide = 2;
+            int thirdSide = 30;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input10_2_3_OutputInvalidTriangleIdentified()
+        {
+            // Arrange
+            Triangle triangle = new Triangle();
+
+            int firstSide = 1;
+            int secondSide = 2;
+            int thirdSide = 30;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            // Act
+            string actual = triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
